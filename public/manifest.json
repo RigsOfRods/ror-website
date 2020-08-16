@@ -1,0 +1,9 @@
+{
+    "name": "Rigs of Rods",
+    "short_name": "Rigs of Rods",
+    "start_url": "",
+    "display": "standalone",
+    "background_color": "#226699",
+    "description": "Rigs of Rods is an open source vehicle simulator licensed under the GNU General Public License version 3.",
+    "icons": []
+}

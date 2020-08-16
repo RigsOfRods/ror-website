@@ -1,0 +1,198 @@
+// File: custom.scss
+/// @author Rafael Galvan
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$enable-shadows: false; // Enables predefined `box-shadow` styles on various components. 'true' is default.
+$enable-caret: true; // Enables pseudo element caret on `.dropdown-toggle`.
+$enable-responsive-font-sizes: true; // Enables responsive font sizes.
+$enable-gradients: true; // Enables gradient, `false` by default.
+
+// Variables follow Bootstrap's recommended `$component-state-property-size` formula
+// to stay consistant. See: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss#L3
+
+$primary: #226699;
+$secondary: #882500;
+
+$dark-100: #121212;
+$dark-200: #1e1e1e;
+$dark-300: #222222;
+$dark-400: #252525;
+$dark-500: #272727;
+$dark-600: #2c2c2c;
+$dark-700: #2d2d2d;
+$dark-800: #333333;
+$dark-900: #353535;
+
+$theme-colors: (
+    "primary": $primary, // Primary color.
+    "secondary": $secondary, // Secondary color.
+    "dark": $dark-200 // Dark base color.
+);
+
+$body-bg: $dark-100; // Change the default `background-body` to dark.
+$body-color: rgba($white, .87); // Change the default `color` to white with 87% opacity.
+
+$link-color: theme-color("primary"); // Change the link `color` to the primary color.
+$link-hover-color: darken($link-color, 15%); // Change the hover link `color` to the primary color with 15% opacity.
+
+$navbar-nav-link-padding-x: .75rem; // Change the X axis padding of nav link.
+
+$navbar-dark-color: $white; // Change the default `color` to white.
+$navbar-dark-hover-color: $primary; // Change the default `color` on hover to primary.
+$navbar-dark-disabled-color: rgba($white, .38); // Change the defeault disabled `color` to white with 38% opacity.
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+$navbar-nav-link-font-family: "Montserrat", sans-serif;
+$navbar-nav-link-font-weight: 600;
+$navbar-nav-link-font-size: 0.75rem;
+
+$hero-color: $white; // Better for contrast to not have 87% opacity.
+$hero-spacer-y: $spacer;
+$hero-spacer-x: $spacer;
+$hero-body-padding: 3rem 1.5rem;
+$hero-body-padding-sm: 1.5rem;
+$hero-body-padding-md: 9rem 1.5rem;
+$hero-body-padding-lg: 18rem 1.5rem;
+$hero-title-font-family: "Montserrat", sans-serif;
+$hero-title-font-weight: 900;
+
+$footer-body-color: rgba($white, .60);
+$footer-background-color: theme-color("dark");
+$footer-padding: 1.5rem;
+$footer-spacer-x: $spacer *1.75;
+$footer-spacer-y: $spacer;
+$footer-font-size: $font-size-base;
+
+$card-bg: $dark-200;
+$card-cap-bg: $dark-300;
+
+$btn-box-shadow: null;
+
+//
+// Navbar
+//
+.navbar-nav {
+    .nav-link {
+        font-family: $navbar-nav-link-font-family;
+        font-weight: $navbar-nav-link-font-weight;
+        font-size: $navbar-nav-link-font-size;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+}
+
+//
+// Hero
+//
+.hero {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    color: $hero-color;
+
+    &.hero-sm { // Small
+        .hero-body {
+            padding: $hero-body-padding-sm;
+        }
+    }
+
+    &.hero-md { // Medium
+        .hero-body {
+            padding: $hero-body-padding-md;
+        }
+    }
+
+    &.hero-lg { // Large
+        .hero-body {
+            padding: $hero-body-padding-lg;
+        }
+    }
+
+    &.h-100 {
+        .hero-body {
+            align-items: center;
+            display: flex;
+            .container {
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+    }
+}
+
+.hero-title {
+    margin-bottom: $hero-spacer-y;
+    font-family: $hero-title-font-family;
+    font-weight: $hero-title-font-weight;
+    color: $white;
+}
+
+.hero-subtitle {
+    margin-top: $hero-spacer-y;
+    margin-bottom: 0;
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: $hero-body-padding;
+}
+
+.hero-overlay {
+    background: linear-gradient(180deg, rgba(18, 18, 18, .9), rgba(18, 18, 18, 1))
+}
+
+//
+// Footer
+//
+.footer {
+    color: $footer-body-color;
+    background-color: $footer-background-color;
+    padding: $footer-padding;
+    font-size: $footer-font-size * .875;
+
+    a,
+    a:hover {
+        //color: $footer-body-color !important;
+        text-decoration: none;
+    }
+}
+
+.footer-links {
+    // Reset `padding-left` to 0.
+    padding-left: 0;
+    // Reset `margin-bottom` to 0, ignore variable.
+    //margin-bottom: 0;
+    font-size: $footer-font-size * .95;
+
+    li {
+        display: inline-block;
+
+        a {
+            color: $body-color !important;
+        }
+    }
+
+    li+li {
+        margin-left: $footer-spacer-x;
+    }
+}
+
+//
+// Buttons
+//
+
+//
+// Card
+//
+
+//
+// Feature
+//
+// Used on the home page to display different aspects of the game.
+// Heavily inspired by Blender's website.   http://blender.org 
