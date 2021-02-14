@@ -16,6 +16,11 @@ $enable-gradients: true; // Enables gradient, `false` by default.
 $primary: #226699;
 $secondary: #882500;
 
+// Brand colors, we define them here and integrate into theme colors.
+$itchio: #fa5c5c; // https://itch.io/press-kit
+$discord: #7289DA; // https://discord.com/branding
+$twitter: #1DA1F2; //https://about.twitter.com/en_us/company/brand-resources.html
+
 $dark-100: #121212;
 $dark-200: #1e1e1e;
 $dark-300: #222222;
@@ -26,26 +31,44 @@ $dark-700: #2d2d2d;
 $dark-800: #333333;
 $dark-900: #353535;
 
-$theme-colors: (
+$custom-colors: (
     "primary": $primary, // Primary color.
     "secondary": $secondary, // Secondary color.
     "dark": $dark-200 // Dark base color.
 );
 
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-family-base: 'Maven Pro', sans-serif;
+
 $body-bg: $dark-100; // Change the default `background-body` to dark.
 $body-color: rgba($white, .87); // Change the default `color` to white with 87% opacity.
 
-$link-color: theme-color("primary"); // Change the link `color` to the primary color.
+$link-decoration: none;
+
+$list-group-color: $body-color;
+$list-group-bg: $body-bg;
+$list-group-border-color: rgba($white, .125);
+
+$list-group-hover-bg: $dark-200;
+$list-group-active-bg: $dark-200;
+$list-group-active-color: $body-color;
+
+$list-group-action-hover-color: $body-color;
+$list-group-action-active-color: $body-color;
+$list-group-action-active-bg: $dark-200;
+
+$link-color: $primary; // Change the link `color` to the primary color.
 $link-hover-color: darken($link-color, 15%); // Change the hover link `color` to the primary color with 15% opacity.
 
-$navbar-nav-link-padding-x: .75rem; // Change the X axis padding of nav link.
+//$navbar-nav-link-padding-x: 1rem; // Change the X axis padding of nav link.
+//$navbar-nav-link-padding-y: 4rem; // Change the Y axis padding of nav link.
 
 $navbar-dark-color: $white; // Change the default `color` to white.
-$navbar-dark-hover-color: $primary; // Change the default `color` on hover to primary.
+$navbar-dark-hover-color: $white; // Change the default `color` on hover to primary.
 $navbar-dark-disabled-color: rgba($white, .38); // Change the defeault disabled `color` to white with 38% opacity.
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 
-$navbar-nav-link-font-family: "Montserrat", sans-serif;
 $navbar-nav-link-font-weight: 600;
 $navbar-nav-link-font-size: 0.75rem;
 
@@ -56,31 +79,31 @@ $hero-body-padding: 3rem 1.5rem;
 $hero-body-padding-sm: 1.5rem;
 $hero-body-padding-md: 9rem 1.5rem;
 $hero-body-padding-lg: 18rem 1.5rem;
-$hero-title-font-family: "Montserrat", sans-serif;
-$hero-title-font-weight: 900;
 
 $footer-body-color: rgba($white, .60);
-$footer-background-color: theme-color("dark");
-$footer-padding: 1.5rem;
+$footer-background-color: $dark-300;
+$footer-padding: 1.5rem 0;
 $footer-spacer-x: $spacer *1.75;
 $footer-spacer-y: $spacer;
 $footer-font-size: $font-size-base;
 
 $card-bg: $dark-200;
 $card-cap-bg: $dark-300;
+//$card-border-radius:
 
 $btn-box-shadow: null;
 
 //
 // Navbar
 //
-.navbar-nav {
+.navbar {
+    // For some reason a gradient was added to the navbar in Bootstrap 5,
+    // this removes it.
+    background-image: none !important;
+    z-index: 400;
+
     .nav-link {
-        font-family: $navbar-nav-link-font-family;
-        font-weight: $navbar-nav-link-font-weight;
-        font-size: $navbar-nav-link-font-size;
-        text-transform: uppercase;
-        transition: 0.3s;
+        font-weight: 600;
     }
 }
 
@@ -127,14 +150,13 @@ $btn-box-shadow: null;
 
 .hero-title {
     margin-bottom: $hero-spacer-y;
-    font-family: $hero-title-font-family;
-    font-weight: $hero-title-font-weight;
+    font-weight: bold;
     color: $white;
 }
 
 .hero-subtitle {
+    font-size: 1.2em;
     margin-top: $hero-spacer-y;
-    margin-bottom: 0;
 }
 
 .hero-body {
@@ -144,7 +166,8 @@ $btn-box-shadow: null;
 }
 
 .hero-overlay {
-    background: linear-gradient(180deg, rgba(18, 18, 18, .9), rgba(18, 18, 18, 1))
+    background: linear-gradient(180deg, rgba(0,0,0,0.95), rgba($primary, .85));
+    backdrop-filter: blur(5px);
 }
 
 //
@@ -155,33 +178,38 @@ $btn-box-shadow: null;
     background-color: $footer-background-color;
     padding: $footer-padding;
     font-size: $footer-font-size * .875;
+}
 
-    a,
-    a:hover {
-        //color: $footer-body-color !important;
-        text-decoration: none;
-    }
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    
+}
+
+.footer-social {
 }
 
 .footer-links {
-    // Reset `padding-left` to 0.
-    padding-left: 0;
-    // Reset `margin-bottom` to 0, ignore variable.
-    //margin-bottom: 0;
-    font-size: $footer-font-size * .95;
+    list-style: none;
+    margin-top: 1em;
+    padding: 0;
 
     li {
         display: inline-block;
-
-        a {
-            color: $body-color !important;
-        }
     }
 
-    li+li {
-        margin-left: $footer-spacer-x;
+    li:not(:first-child) {
+        margin-left: 1em;
     }
 }
+
+//
+// List group
+//
+
 
 //
 // Buttons
@@ -192,7 +220,47 @@ $btn-box-shadow: null;
 //
 
 //
-// Feature
+// Feature items
 //
 // Used on the home page to display different aspects of the game.
 // Heavily inspired by Blender's website.   http://blender.org 
+.feature-item {
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 60px 0;
+}
+
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .feature-body {
+        padding-left: 60px;
+    }
+}
+
+.feature-body {
+    text-align: left;
+    margin: 0 auto;
+    padding: 30px 30px 30px 0;
+    flex: 1;
+}
+
+.feature-title {
+    color: $white;
+}
+
+.feature-img {
+    flex: 1;
+}
+
+.feature-img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+//
+// Misc
+//

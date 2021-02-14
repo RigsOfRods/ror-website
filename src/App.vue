@@ -15,6 +15,9 @@ export default {
   components: {
     TheNavBar,
     TheFooter
+  },
+  metaInfo: {
+    titleTemplate: '%s | Rigs of Rods'
   }
 }
 </script>
@@ -31,6 +34,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 #app, html, body {

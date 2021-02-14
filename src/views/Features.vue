@@ -4,5 +4,10 @@
 </template>
 
 <script>
-export default {name: 'Features'}
+export default {
+  name: 'Features',
+  metaInfo: {
+    title: 'Features'
+  }
+}
 </script>
