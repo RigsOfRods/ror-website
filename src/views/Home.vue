@@ -19,12 +19,14 @@
                   ><i class="fas fa-download" style="padding-right: 0.5em;"></i>
                   Download</a
                 >
-                <a
-                  href="/download"
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#trailerModal"
                   class="btn btn-primary btn-lg px-4 mt-4 mb-3 me-3 shadow border-0 scale-up"
-                  ><i class="fas fa-video" style="padding-right: 0.5em;"></i>
-                  Trailer</a
                 >
+                  <i class="fas fa-video" style="padding-right: 0.5em;"></i>
+                  Trailer
+                </button>
               </div>
             </div>
           </div>
@@ -128,17 +130,20 @@
         />
       </div>
     </section>
+    <TrailerModal />
   </div>
 </template>
 
 <script>
 import LatestNewsCard from "../components/Home/LatestNewsCard";
 import FeatureItem from "../components/Home/FeatureItem";
+import TrailerModal from "@/components/Home/TrailerModal.vue";
 
 export default {
   components: {
     LatestNewsCard,
     FeatureItem,
+    TrailerModal,
   },
   name: "Home",
   metaInfo: {
