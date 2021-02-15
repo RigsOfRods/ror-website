@@ -1,0 +1,126 @@
+// File: custom.scss
+/// @author Rafael Galvan
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$enable-shadows: false; // Enables predefined `box-shadow` styles on various components. 'true' is default.
+$enable-caret: true; // Enables pseudo element caret on `.dropdown-toggle`.
+$enable-responsive-font-sizes: true; // Enables responsive font sizes.
+$enable-gradients: false; // Enables gradient, `false` by default.
+
+// Variables follow Bootstrap's recommended `$component-state-property-size` formula
+// to stay consistant. See: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss#L3
+
+@import "./_vars.scss";
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1180px,
+  xxl: 1200px,
+);
+
+$custom-colors: (
+  "primary": $primary,
+  // Primary color.
+    "secondary": $secondary,
+  // Secondary color.
+    "dark": $dark-200
+    // Dark base color.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$body-bg: $dark-100; // Change the default `background-body` to dark.
+$body-color: rgba(
+  $white,
+  0.87
+); // Change the default `color` to white with 87% opacity.
+
+$link-decoration: none;
+
+$list-group-color: $body-color;
+$list-group-bg: $body-bg;
+$list-group-border-color: rgba($white, 0.125);
+
+$list-group-hover-bg: $dark-200;
+$list-group-active-bg: $dark-200;
+$list-group-active-color: $body-color;
+
+$list-group-action-hover-color: $body-color;
+$list-group-action-active-color: $body-color;
+$list-group-action-active-bg: $dark-200;
+
+$link-color: #226699; // Change the link `color` to the primary color.
+$link-hover-color: #2f84c5;
+
+//$navbar-nav-link-padding-x: 1em; // Change the X axis padding of nav link.
+//$navbar-nav-link-padding-y: 4em; // Change the Y axis padding of nav link.
+
+$navbar-dark-disabled-color: rgba(
+  $white,
+  0.38
+); // Change the defeault disabled `color` to white with 38% opacity.
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+$navbar-nav-link-font-weight: 100;
+$navbar-nav-link-font-size: 0.75em;
+
+$hero-color: $white; // Better for contrast to not have 87% opacity.
+$hero-spacer-y: $spacer;
+$hero-spacer-x: $spacer;
+$hero-body-padding: 3em 1.5em;
+$hero-body-padding-sm: 1.5em;
+$hero-body-padding-md: 9em 1.5em;
+$hero-body-padding-lg: 18em 1.5em;
+
+$footer-body-color: $gray-500;
+$footer-background-color: $dark-secondary;
+$footer-padding: 1.5em 0;
+$footer-spacer-x: $spacer * 1.75;
+$footer-spacer-y: $spacer;
+$footer-font-size: $font-size-base;
+
+$card-bg: $dark-200;
+$card-cap-bg: $dark-300;
+//$card-border-radius:
+
+$btn-box-shadow: null;
+
+//this always needs to be last
+@import "~bootstrap/scss/bootstrap";
+
+//
+// Navbar
+//
+
+//Depends on vue router
+.blueNavbar {
+  background-color: $primary;
+}
+
+.navbar {
+  z-index: 400;
+
+  .nav-link {
+    color: $gray-400;
+
+    &:hover {
+      color: white !important;
+    }
+  }
+
+  .selected {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  border-radius: 0.6em;
+  font-size: 1.15em;
+}

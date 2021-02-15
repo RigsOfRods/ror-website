@@ -1,33 +1,30 @@
 <template>
   <div id="app" class="d-flex flex-column">
-    <TheNavBar/>
-    <router-view/>
-    <TheFooter/>
+    <TheNavBar />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TheNavBar from '@/components/TheNavBar.vue'
-import TheFooter from '@/components/TheFooter.vue'
+import TheNavBar from "@/components/TheNavBar.vue";
+import TheFooter from "@/components/TheFooter.vue";
 
 export default {
   components: {
     TheNavBar,
-    TheFooter
+    TheFooter,
   },
   metaInfo: {
-    titleTemplate: '%s | Rigs of Rods'
-  }
-}
+    titleTemplate: "%s | Rigs of Rods",
+  },
+};
 </script>
 
-<style lang="scss">
-@import 'assets/custom.scss';
-
-@import '~bootstrap';
-@import '~bootstrap/scss/bootstrap.scss';
-</style>
+<style lang="scss"></style>
 
 <style>
 #app {
@@ -37,7 +34,30 @@ export default {
   overflow-y: scroll;
 }
 
-#app, html, body {
+#app,
+html,
+body {
   height: 100% !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media (min-width: 540px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 720px) {
+  body {
+    font-size: 16px;
+  }
 }
 </style>
