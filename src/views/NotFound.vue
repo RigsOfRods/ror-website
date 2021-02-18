@@ -6,7 +6,6 @@
           <div class="col">
             <h2>404! That page couldn't be found.</h2>
             <p>Try removing Ogre.h, that might solve your problem.</p>
-            <small>lol</small>
           </div>
           <div class="col my-auto mx-auto">
             <i class="fas fa-bomb float-end" style="font-size: 3rem;"></i>

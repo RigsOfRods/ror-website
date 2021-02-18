@@ -12,7 +12,6 @@
                   uses soft-body physics to simulate the motion destruction and
                   deformation of vehicles
                 </p>
-                <!-- TODO: button design needs tweaking, but i don't know what -->
                 <a
                   href="/download"
                   class="btn btn-secondary btn-lg px-4 mt-4 mb-3 me-3 shadow border-0 scale-up"

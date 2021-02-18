@@ -2,88 +2,59 @@
   <div class="container get-involved">
     <div class="section-header">
       <div class="section-header-title">
-        Get involved
+        Get Involved
       </div>
     </div>
-    <!--  -->
-    <h4>Tools & Content creation</h4>
-    <div class="card">
-      <div class="card-body">
-        Rigs of rods gives you the ability to realistically give your creation a
-        life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum vitae dignissim est. Donec sem nulla, pellentesque in turpis
-        in, tempor molestie diam. Quisque quis nibh elit. Donec ac malesuada
-        risus. Nunc feugiat porttitor ante, quis vulputate eros porta ut. Sed
-        vestibulum lectus nec dolor pulvinar, sed sodales ex congue. Nulla
-        facilisi. Integer ligula dolor, convallis vel auctor et, aliquam nec
-        mauris. Aliquam ante urna, molestie in nibh quis, molestie imperdiet
-        arcu. Suspendisse in sapien consectetur, volutpat lacus non, eleifend
-        enim. Etiam in arcu vestibulum, lobortis elit sit amet, porttitor velit.
-        Nam consectetur sapien vel eros gravida, ac finibus ex ornare. Aliquam
-        et odio sit amet purus viverra aliquet. Aliquam vitae nibh at massa
-        laoreet fringilla. Quisque elementum dolor a nulla laoreet, sit amet
-        tempus est posuere.
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <h4>Game development</h4>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              Rigs of Rods started out as a small side project in 2005 by Pierre-Michel Ricordel. The game was eventually open sourced in 2009 and the project has since then been contributed to by volunteers from all around the world.</p>
+            <p class="card-text">
+              Rigs of Rods is coded in C++ and uses OGRE for its graphics library and Dear ImGui for its UI library.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!--  -->
-    <h4>Web development</h4>
-    <div class="card">
-      <div class="card-body">
-        Rigs of rods gives you the ability to realistically give your creation a
-        life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum vitae dignissim est. Donec sem nulla, pellentesque in turpis
-        in, tempor molestie diam. Quisque quis nibh elit. Donec ac malesuada
-        risus. Nunc feugiat porttitor ante, quis vulputate eros porta ut. Sed
-        vestibulum lectus nec dolor pulvinar, sed sodales ex congue. Nulla
-        facilisi. Integer ligula dolor, convallis vel auctor et, aliquam nec
-        mauris. Aliquam ante urna, molestie in nibh quis, molestie imperdiet
-        arcu. Suspendisse in sapien consectetur, volutpat lacus non, eleifend
-        enim. Etiam in arcu vestibulum, lobortis elit sit amet, porttitor velit.
-        Nam consectetur sapien vel eros gravida, ac finibus ex ornare. Aliquam
-        et odio sit amet purus viverra aliquet. Aliquam vitae nibh at massa
-        laoreet fringilla. Quisque elementum dolor a nulla laoreet, sit amet
-        tempus est posuere.
+      <div class="col">
+        <h4>Web development</h4>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              This website is made using VueJS, front end JavaScript framework. We are always looking for any type of feedback or improvements.
+            </p>
+            <p class="card-text">
+              Adding and improving documentation is critical for Rigs of Rods. We use MkDocs deployed on GitHub Pages.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--  -->
-    <h4>Translation</h4>
-    <div class="card">
-      <div class="card-body">
-        Rigs of rods gives you the ability to realistically give your creation a
-        life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum vitae dignissim est. Donec sem nulla, pellentesque in turpis
-        in, tempor molestie diam. Quisque quis nibh elit. Donec ac malesuada
-        risus. Nunc feugiat porttitor ante, quis vulputate eros porta ut. Sed
-        vestibulum lectus nec dolor pulvinar, sed sodales ex congue. Nulla
-        facilisi. Integer ligula dolor, convallis vel auctor et, aliquam nec
-        mauris. Aliquam ante urna, molestie in nibh quis, molestie imperdiet
-        arcu. Suspendisse in sapien consectetur, volutpat lacus non, eleifend
-        enim. Etiam in arcu vestibulum, lobortis elit sit amet, porttitor velit.
-        Nam consectetur sapien vel eros gravida, ac finibus ex ornare. Aliquam
-        et odio sit amet purus viverra aliquet. Aliquam vitae nibh at massa
-        laoreet fringilla. Quisque elementum dolor a nulla laoreet, sit amet
-        tempus est posuere.
+      <div class="col">
+        <h4>Translations</h4>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              Rigs of Rods is played by people all around the world, and the whole world doesn't speak just English. If you are a native speaker of a language other than English, your help would be greatly appreciated.
+            </p>
+            <p class="card-text">
+              <a href="https://hosted.weblate.org/engage/rigs-of-rods/">
+              <img src="https://hosted.weblate.org/widgets/rigs-of-rods/-/287x66-black.png" alt="Translation status" />
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--  -->
-    <h4>Game development</h4>
-    <div class="card">
-      <div class="card-body">
-        Rigs of rods gives you the ability to realistically give your creation a
-        life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum vitae dignissim est. Donec sem nulla, pellentesque in turpis
-        in, tempor molestie diam. Quisque quis nibh elit. Donec ac malesuada
-        risus. Nunc feugiat porttitor ante, quis vulputate eros porta ut. Sed
-        vestibulum lectus nec dolor pulvinar, sed sodales ex congue. Nulla
-        facilisi. Integer ligula dolor, convallis vel auctor et, aliquam nec
-        mauris. Aliquam ante urna, molestie in nibh quis, molestie imperdiet
-        arcu. Suspendisse in sapien consectetur, volutpat lacus non, eleifend
-        enim. Etiam in arcu vestibulum, lobortis elit sit amet, porttitor velit.
-        Nam consectetur sapien vel eros gravida, ac finibus ex ornare. Aliquam
-        et odio sit amet purus viverra aliquet. Aliquam vitae nibh at massa
-        laoreet fringilla. Quisque elementum dolor a nulla laoreet, sit amet
-        tempus est posuere.
+      <div class="col">
+        <h4>Content creation tools</h4>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              We maintain several Blender plugins.
+            </p>
+          </div>          
+        </div>
       </div>
     </div>
   </div>
