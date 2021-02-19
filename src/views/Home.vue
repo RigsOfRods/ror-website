@@ -40,31 +40,16 @@
         <div class="latest-news-body">
           <div class="row">
             <div class="col-12 col col-lg-6 col-xl-4">
-              <LatestNewsCard
-                title="Rigs of rods 2021.02 Released"
-                date="Feb 1, 2021"
-                author="Zentro"
-                author_link="#"
-                post_link="#"
-              />
-            </div>
-            <div class="col-12 col-lg-6 col-xl-4">
-              <LatestNewsCard
-                title="Rigs of rods 2021.02 Released"
-                date="Feb 1, 2021"
-                author="Zentro"
-                author_link="#"
-                post_link="#"
-              />
-            </div>
-            <div class="col-12 col-lg-6 col-xl-4">
-              <LatestNewsCard
-                title="Rigs of rods 2021.02 Released"
-                date="Feb 1, 2021"
-                author="Zentro"
-                author_link="#"
-                post_link="#"
-              />
+              <div v-for="announcement in announcements" :key="announcement.id">
+                <LatestNewsCard
+                  :title="announcement.title"
+                  :date="announcement.date"
+                  :author="announcement.author"
+                  :author_link="announcement.author_url"
+                  :post_link="announcement.url"
+                  :avatar_url="announcement.avatar_url"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -145,9 +130,20 @@ export default {
     TrailerModal,
   },
   name: "Home",
+  computed: {
+    announcements() {
+      return this.$store.state.announcements
+    }
+  },
+  mounted() {
+    this.$store.dispatch("getAllAnnouncements");
+  },
   metaInfo: {
     title: "Rigs of Rods Soft-body Physics Simulator",
     titleTemplate: false,
+    meta: [
+      { name: "description", content: "Rigs of Rods is an open source vehicle simulator licensed under the GNU General Public License version 3."}
+    ]
   },
 };
 </script>

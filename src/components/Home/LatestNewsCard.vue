@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col avatar">
             <img
-              src="https://cdn.rigsofrods.org/data/avatars/m/0/5.jpg?1612209702"
+              :src="avatar_url"
               alt=""
             />
           </div>
@@ -22,7 +22,7 @@
           <span class="author">
             By <a :href="author_link">{{ author }}</a>
           </span>
-          <a :href="post_link" class="float-end">See more</a>
+          <a :href="post_link" class="float-end">Read more</a>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  props: ["title", "date", "author", "author_link", "post_link"],
+  props: ["title", "date", "author", "author_link", "post_link", "avatar_url"],
 };
 </script>
 

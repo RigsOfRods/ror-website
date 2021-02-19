@@ -11,8 +11,6 @@
         <div class="card">
           <div class="card-body">
             <p class="card-text">
-              Rigs of Rods started out as a small side project in 2005 by Pierre-Michel Ricordel. The game was eventually open sourced in 2009 and the project has since then been contributed to by volunteers from all around the world.</p>
-            <p class="card-text">
               Rigs of Rods is coded in C++ and uses OGRE for its graphics library and Dear ImGui for its UI library.
             </p>
           </div>
@@ -23,7 +21,7 @@
         <div class="card">
           <div class="card-body">
             <p class="card-text">
-              This website is made using VueJS, front end JavaScript framework. We are always looking for any type of feedback or improvements.
+              This website is made using VueJS, which is a front end JavaScript framework. We are always looking for any type of feedback or improvements.
             </p>
             <p class="card-text">
               Adding and improving documentation is critical for Rigs of Rods. We use MkDocs deployed on GitHub Pages.
@@ -51,7 +49,10 @@
         <div class="card">
           <div class="card-body">
             <p class="card-text">
-              We maintain several Blender plugins.
+              We maintain a few Blender plugins for exporting and importing.
+            </p>
+            <p class="card-text">
+              We maintain nodeSnap which is developed using Electron.
             </p>
           </div>          
         </div>

@@ -20,6 +20,10 @@ export default {
   },
   metaInfo: {
     titleTemplate: "%s | Rigs of Rods",
+    lang: "en",
+    meta: [
+      { name: "theme-color", content: "#226699"}
+    ]
   },
 };
 </script>

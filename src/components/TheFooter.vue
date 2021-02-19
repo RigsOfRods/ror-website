@@ -3,7 +3,10 @@
     <div class="container">
       <div class="row footer-body">
         <div class="col-10 col-md-8 col-lg-9 col-xl-10 footer-info">
-          <h5>© 2013-2021 Petr Ohlidal</h5>
+          <h5>© 2013-2021 Petr Ohlidal <br /><small>
+            © 2005-2013 Pierre-Michel Ricordel <br />
+            © 2009-2013 Thomas Fischer</small>
+          </h5>
 
           Rigs of Rods is distributed under the
           <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"
@@ -56,6 +59,13 @@ export default {};
   a {
     text-decoration: underline;
     color: $gray-500;
+  }
+
+  h5 {
+    small {
+      font-weight: normal;
+      font-size: 0.8em;
+    }
   }
 
   .footer-links {
