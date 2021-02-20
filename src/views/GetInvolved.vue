@@ -5,57 +5,58 @@
         Get Involved
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <h4>Game development</h4>
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              Rigs of Rods is coded in C++ and uses OGRE for its graphics library and Dear ImGui for its UI library.
-            </p>
-          </div>
-        </div>
+
+    <!-- -->
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">
+          Rigs of Rods is an entirely open source project, meaning anyone can contribute. There are many ways to help contribute to the Rigs of Rods, which involves many different skill sets apart from just coding.
+        </p>
       </div>
-      <div class="col">
-        <h4>Web development</h4>
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              This website is made using VueJS, which is a front end JavaScript framework. We are always looking for any type of feedback or improvements.
-            </p>
-            <p class="card-text">
-              Adding and improving documentation is critical for Rigs of Rods. We use MkDocs deployed on GitHub Pages.
-            </p>
-          </div>
-        </div>
+    </div>
+
+    <!-- -->
+    <h4>Working with Code</h4>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Game development</h5>
+        <p class="card-text">
+          Rigs of Rods is coded in C++ and uses OGRE for its graphics library and Dear ImGui for its UI library. Please see the <a href="https://developer.rigsofrods.org">Developer Portal</a> for more information.
+        </p>
+        <h5 class="card-title">Game scripting</h5>
+        <p class="card-text">
+          Rigs of Rods uses <a href="https://en.wikipedia.org/wiki/AngelScript">AngelScript</a>, an easy to use scripting language.
+        </p>
+        <h5 class="card-title">Web development</h5>
+        <p class="card-text">
+          This website is made using VueJS. If you are familiar with JavaScript or HTML and CSS, any contributions are welcome. Please visit the <a href="https://docs.rigsofrods.org">docs page on website development.</a>
+        </p>
       </div>
-      <div class="col">
-        <h4>Translations</h4>
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              Rigs of Rods is played by people all around the world, and the whole world doesn't speak just English. If you are a native speaker of a language other than English, your help would be greatly appreciated.
-            </p>
-            <p class="card-text">
-              <a href="https://hosted.weblate.org/engage/rigs-of-rods/">
-              <img src="https://hosted.weblate.org/widgets/rigs-of-rods/-/287x66-black.png" alt="Translation status" />
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <h4>Content creation tools</h4>
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              We maintain a few Blender plugins for exporting and importing.
-            </p>
-            <p class="card-text">
-              We maintain nodeSnap which is developed using Electron.
-            </p>
-          </div>          
-        </div>
+    </div>
+
+    <!-- -->
+    <h4>Non-Coding</h4>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Reporting issues</h5>
+        <p class="card-text">
+          Rigs of Rods is a large open-source project which means developers rely on users to report back issues they encounter directly. Any issue, small or large, is an excellent contribution to the stability of the game.
+          <ul>
+            <li>Our code repository is hosted on GitHub, which means <a href="https://github.com/RigsOfRods/rigs-of-rods/issues">we keep track of issues there</a>. Please review our <a href="#">guide on opening an issue</a>.</li>
+            <li>Consider looking through other issues that haven't received as much attention.</li>
+          </ul>
+        </p>
+        <h5 class="card-title">Translations</h5>
+        <p class="card-text">
+          Rigs of Rods is played by people from all around the world, and the whole world doesn't speak just English. If you are a native speaker of a language other than English, your help would be greatly appreciated.
+        </p>
+        <a href="https://hosted.weblate.org/engage/rigs-of-rods/">
+          <img src="https://hosted.weblate.org/widgets/rigs-of-rods/-/287x66-black.png" alt="Translation status" />
+        </a><br /><br />
+        <h5 class="card-title">Documenting</h5>
+        <p class="card-text">
+          Adding and improving documentation is critical for Rigs of Rods as many beginners and experts rely on it to have the most update-to-date information possible. Please see on <a href="https://docs.rigsofrods.org">how to contribute</a>.
+        </p>
       </div>
     </div>
   </div>
