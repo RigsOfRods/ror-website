@@ -10,7 +10,7 @@
     <div class="card">
       <div class="card-body">
         <p class="card-text">
-          Rigs of Rods is an entirely open source project, meaning anyone can contribute. There are many ways to help contribute to the Rigs of Rods, which involves many different skill sets apart from just coding.
+          Rigs of Rods is an open source project, meaning anyone can contribute. There are many ways to help contribute to the Rigs of Rods, which involves many different skill sets apart from just coding.
         </p>
       </div>
     </div>
@@ -21,7 +21,7 @@
       <div class="card-body">
         <h5 class="card-title">Game development</h5>
         <p class="card-text">
-          Rigs of Rods is coded in C++ and uses OGRE for its graphics library and Dear ImGui for its UI library. Please see the <a href="https://developer.rigsofrods.org">Developer Portal</a> for more information.
+          Rigs of Rods is coded in C++ and uses <a href="https://www.ogre3d.org/">OGRE</a> for its graphics library and <a href="https://github.com/ocornut/imgui">Dear ImGui</a> for its UI library. Please see the <a href="https://developer.rigsofrods.org">Developer Portal</a> for more information.
         </p>
         <h5 class="card-title">Game scripting</h5>
         <p class="card-text">
@@ -29,7 +29,7 @@
         </p>
         <h5 class="card-title">Web development</h5>
         <p class="card-text">
-          This website is made using VueJS. If you are familiar with JavaScript or HTML and CSS, any contributions are welcome. Please visit the <a href="https://docs.rigsofrods.org">docs page on website development.</a>
+          This website is made using Vue.js. If you are familiar with JavaScript or HTML and CSS, any contributions are welcome. Please visit the <a href="https://docs.rigsofrods.org">docs page on website development.</a>
         </p>
       </div>
     </div>
@@ -40,7 +40,7 @@
       <div class="card-body">
         <h5 class="card-title">Reporting issues</h5>
         <p class="card-text">
-          Rigs of Rods is a large open-source project which means developers rely on users to report back issues they encounter directly. Any issue, small or large, is an excellent contribution to the stability of the game.
+          Rigs of Rods is a large open-source project which means developers rely on users to report back issues they encounter directly to them. Reporting any issue, small or large, is an excellent contribution to the stability of the game.
           <ul>
             <li>Our code repository is hosted on GitHub, which means <a href="https://github.com/RigsOfRods/rigs-of-rods/issues">we keep track of issues there</a>. Please review our <a href="#">guide on opening an issue</a>.</li>
             <li>Consider looking through other issues that haven't received as much attention.</li>
