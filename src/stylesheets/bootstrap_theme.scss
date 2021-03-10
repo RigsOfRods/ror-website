@@ -25,7 +25,9 @@ $container-max-widths: (
 $custom-colors: (
   "primary": $primary, // Primary color, based on 'Rigs of Rods Blue'
   "secondary": $secondary, // Secondary color, based on 'Rigs of Rods Red'
-  "dark": $dark-200 // Base dark
+  "dark": $dark-200, // Base dark
+
+  "itchio": $itchio
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

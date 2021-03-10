@@ -39,80 +39,65 @@
         </h2>
         <div class="latest-news-body">
           <div class="row">
-            <div class="col-12 col col-lg-6 col-xl-4">
-              <div v-for="announcement in announcements" :key="announcement.id">
-                <LatestNewsCard
-                  :title="announcement.title"
-                  :date="announcement.date"
-                  :author="announcement.author"
-                  :author_link="announcement.author_url"
-                  :post_link="announcement.url"
-                  :avatar_url="announcement.avatar_url"
-                />
-              </div>
+            <div class="col-12 col col-lg-6 col-xl-4" v-for="announcement in announcements" :key="announcement.id">
+              <LatestNewsCard
+                :title="announcement.title"
+                :date="announcement.date"
+                :author="announcement.author"
+                :author_link="announcement.author_url"
+                :post_link="announcement.url"
+                :avatar_url="announcement.avatar_url"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="features">
+    <section>
+      <!-- -->
       <div class="container">
-        <div class="feature-head pt-4">
-          <!-- TODO: finish this section, title needs proper positioning and font sizing -->
-          <!-- TODO: also finish gfx for images, must include the (c) of everyone's who screenshot im using -->
-          <h2 class="feature-title">
-            A soft-body physics sandbox for everyone
-          </h2>
-          <p class="feature-text">
-            Unleash the full power of soft-body physics. Nothing is predefined,
-            everything is in real time.
-          </p>
+        <div class="feature-item">
+          <div class="row py-md-4">
+            <div class="col-12 col-lg-6 mt-4 my-lg-auto">
+              <h4 class="feature-title">The Free & Open Source Vehicle Simulator</h4>
+              <p class="feature-text">
+                Rigs of Rods is a free and open-source vehicle simulator. It allows for the accurate physical simulation of a flexible soft-body object which entirely depends on the physical construction of what you make.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 feature-img mx-auto my-auto">
+              <img src="../assets/background-truckrally.png" />
+            </div>
+          </div>
         </div>
-        <FeatureItem
-          title="Real Soft-body Physics"
-          text="Loem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          :list="[
-            `Non tellus orci ac auctor augue mauris augue`,
-            `Curabitur gravida arcu ac tortor dignissim`,
-            `Nisi est sit amet facilisis magna etiam tempor orci`,
-            `Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus`,
-          ]"
-        />
-        <FeatureItem
-          title="Advanced Flight Model"
-          text="Loem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          :list="[
-            `Non tellus orci ac auctor augue mauris augue`,
-            `Curabitur gravida arcu ac tortor dignissim`,
-            `Nisi est sit amet facilisis magna etiam tempor orci`,
-            `Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus`,
-          ]"
-        />
-        <FeatureItem
-          title="Accurate Buoyancy Model"
-          text="Loem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          :list="[
-            `Non tellus orci ac auctor augue mauris augue`,
-            `Curabitur gravida arcu ac tortor dignissim`,
-            `Nisi est sit amet facilisis magna etiam tempor orci`,
-            `Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus`,
-          ]"
-        />
-        <FeatureItem
-          title="Extendable with AngelScript"
-          text="Loem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          :list="[
-            `Non tellus orci ac auctor augue mauris augue`,
-            `Curabitur gravida arcu ac tortor dignissim`,
-            `Nisi est sit amet facilisis magna etiam tempor orci`,
-            `Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus`,
-          ]"
-        />
+        <div class="feature-item">
+          <div class="row py-md-4">
+            <div class="col-12 col-lg-6 mt-4 my-lg-auto">
+              <h4 class="feature-title">Your World, Your Creations</h4>
+              <p class="feature-text">
+                Put your ideas into Rigs of Rods with ease! Our documentation is always up-to-date, with plenty of helpful tutorials written by community members to help you start.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 feature-img mx-auto my-auto">
+              <img src="../assets/background-sunset.png" />
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="row py-md-4">
+            <div class="col-12 col-lg-6 mt-4 my-lg-auto">
+              <h4 class="feature-title">Play, With Friends</h4>
+              <p class="feature-text">
+                Play Rigs of Rods – with your friends! Enjoy what you do in single player but with up to 64 other players in a public lobby or your own private server.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 feature-img mx-auto my-auto">
+              <img src="../assets/background-helicopter.png" />
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- -->
+
     </section>
     <TrailerModal />
   </div>
@@ -120,13 +105,11 @@
 
 <script>
 import LatestNewsCard from "../components/Home/LatestNewsCard";
-import FeatureItem from "../components/Home/FeatureItem";
 import TrailerModal from "@/components/Home/TrailerModal.vue";
 
 export default {
   components: {
     LatestNewsCard,
-    FeatureItem,
     TrailerModal,
   },
   name: "Home",
@@ -229,6 +212,21 @@ export default {
   flex-shrink: 0;
   padding: $hero-body-padding;
   margin-top: 60px;
+}
+
+.feature-item {
+  align-items: center;
+  font-size: 1.1em;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.feature-body {
+  text-align: left;
+}
+
+.feature-img img {
+  max-width: 100%;
 }
 
 .feature-item:nth-child(even) {

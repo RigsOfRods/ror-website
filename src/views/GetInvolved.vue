@@ -27,6 +27,15 @@
         <p class="card-text">
           Rigs of Rods uses <a href="https://en.wikipedia.org/wiki/AngelScript">AngelScript</a>, an easy to use scripting language.
         </p>
+        <h5 class="card-title">Game tools</h5>
+        <p class="card-text">
+          We maintain several tools meant to ease the content creation process:
+          <ul>
+            <li><a href="https://forum.rigsofrods.org/resources/nodesnap-truckfile-editor.775/">nodeSnap: Truckfile editor</a> - our primary truckfile editor</li>
+            <li><a href="https://forum.rigsofrods.org/resources/blender-n-b-import-export-plugin.25/">Blender N/B Import/Export Plugin</a> - import and export truckfiles into Blender</li>
+            <li><a href="https://forum.rigsofrods.org/resources/blender-ror-truck-exporter.765/">Blender RoR Truck Exporter</a> - export a truckfile from Blender</li>
+          </ul>
+        </p>
         <h5 class="card-title">Web development</h5>
         <p class="card-text">
           This website is made using Vue.js. If you are familiar with JavaScript or HTML and CSS, any contributions are welcome. Please visit the <a href="https://docs.rigsofrods.org">docs page on website development.</a>

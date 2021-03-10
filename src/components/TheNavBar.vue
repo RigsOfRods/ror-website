@@ -5,7 +5,6 @@
     role="nav"
   >
     <div class="container">
-      <!-- TODO: i hate this -->
       <router-link class="navbar-brand" to="/"
         ><img
           src="../assets/RoR_Logo.png"
@@ -14,16 +13,10 @@
           id="logo"
           width="180"
       /></router-link>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navBar"
-        aria-controls="navBar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+        </svg>
       </button>
 
       <div class="collapse navbar-collapse" id="navBar">
@@ -49,7 +42,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://docs.rigsofrods.org"
-              >Documentation</a
+              >Docs</a
             >
           </li>
           <li class="nav-item">
@@ -71,9 +64,7 @@ export default {};
 </script>
 
 <style lang="scss">
-.navbar-toggler-icon {
-  background-image: escape-svg(
-    "data:image/svg+xml,%3csvg xmlns=http://www.w3.org/2000/svg width=30 height=30 viewBox=0 0 30 30%3e%3cpath stroke=rgba%28255, 255, 255, 0.55%29 stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=M4 7h22M4 15h22M4 23h22/%3e%3c/svg%3e"
-  );
+.navbar-toggler {
+  color: rgba(255,255,255,.55);
 }
 </style>
