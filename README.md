@@ -1,6 +1,7 @@
 <a href="http://rigsofrods.org">
     <img src="src/assets/RoR_Logo.png" width="400" alt="Rigs of Rods Logo" />
 </a>
+
 #
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
