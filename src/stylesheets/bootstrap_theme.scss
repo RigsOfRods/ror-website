@@ -10,7 +10,7 @@ $enable-responsive-font-sizes: true; // Enables responsive font sizes.
 $enable-gradients: false; // Enables gradient, `false` by default.
 
 // Variables follow Bootstrap's recommended `$component-state-property-size` formula
-// to stay consistant. See: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss#L3
+// to stay consistent. See: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss#L3
 
 @import "./_vars.scss";
 
@@ -33,10 +33,7 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $body-bg: $dark-100; // Change the default `background-body` to dark.
-$body-color: rgba(
-  $white,
-  0.87
-); // Change the default `color` to white with 87% opacity.
+$body-color: rgba($white,0.60); // Change the default `color` to white with 87% opacity.
 
 $link-decoration: none;
 
@@ -55,13 +52,7 @@ $list-group-action-active-bg: $dark-200;
 $link-color: #226699; // Change the link `color` to the primary color.
 $link-hover-color: #2f84c5;
 
-//$navbar-nav-link-padding-x: 1em; // Change the X axis padding of nav link.
-//$navbar-nav-link-padding-y: 4em; // Change the Y axis padding of nav link.
-
-$navbar-dark-disabled-color: rgba(
-  $white,
-  0.38
-); // Change the defeault disabled `color` to white with 38% opacity.
+$navbar-dark-disabled-color: rgba($white,0.38); // Change the defeault disabled `color` to white with 38% opacity.
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 
 $navbar-nav-link-font-weight: 100;
@@ -106,12 +97,12 @@ $btn-box-shadow: null;
     color: $gray-400;
 
     &:hover {
-      color: white !important;
+      color: $white !important;
     }
   }
 
   .selected {
-    color: white;
+    color: $white;
     font-weight: 500;
   }
 }
@@ -120,4 +111,13 @@ $btn-box-shadow: null;
 .btn-group-lg > .btn {
   border-radius: 0.6em;
   font-size: 1.15em;
+}
+
+//
+// Typography
+//
+
+h1, h2, h3, h4, h5, h6 {
+  // High Emphasis text, is 87%
+  color: rgba($white, .87);
 }

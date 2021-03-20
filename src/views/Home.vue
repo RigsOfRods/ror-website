@@ -10,7 +10,7 @@
                 <p class="hero-subtitle mb-2">
                   Rigs of Rods is a free and open source vehicle simulator that
                   uses soft-body physics to simulate the motion destruction and
-                  deformation of vehicles
+                  deformation of vehicles.
                 </p>
                 <a
                   href="/download"

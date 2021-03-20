@@ -8,7 +8,7 @@
                     <button class="btn btn-dl dropdown-toggle dropdown-toggle-split" type="button" id="dropdownWindowsReleases" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu dropdown-dl" aria-labelledby="dropdownWindowsReleases" v-for="item in items" :key="item.rel">
+                    <ul class="dropdown-menu dropdown-dl shadow" aria-labelledby="dropdownWindowsReleases">
                         <div v-for="item in items" :key="item.rel">
                             <li><a class="dropdown-item" :href="item.url">{{ item.rel }}</a></li>
                         </div>
@@ -36,6 +36,7 @@ export default {
   border: 1px solid $dark-200;
   box-shadow: none;
   text-align: left;
+  color: #FFF;
 
   &:hover, &:focus {
     background-color: $dark-200;
@@ -53,7 +54,8 @@ export default {
 }
 
 .dropdown-dl {
-  background-color: $dark-400;
+  background-color: $dark-600;
+  border: 0;
   width:100%;
   transform: translate(0px, 62px) !important;
 

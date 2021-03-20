@@ -9,8 +9,9 @@
     <!-- -->
     <div class="card">
       <div class="card-body">
+        <h5 class="card-title">The Rigs of Rods project</h5>
         <p class="card-text">
-          Rigs of Rods is an open source project, meaning anyone can contribute. There are many ways to help contribute to the Rigs of Rods, which involves many different skill sets apart from just coding.
+          Rigs of Rods is an open source project, meaning anyone can contribute. There are many ways to help contribute to the project, which involves many different skill sets apart from just coding.
         </p>
       </div>
     </div>
@@ -38,7 +39,7 @@
         </p>
         <h5 class="card-title">Web development</h5>
         <p class="card-text">
-          This website is made using Vue.js. If you are familiar with JavaScript or HTML and CSS, any contributions are welcome. Please visit the <a href="https://docs.rigsofrods.org">docs page on website development.</a>
+          If you are familiar with JavaScript or HTML and CSS, any contributions are welcome. Please visit the <a href="https://docs.rigsofrods.org">docs page on website development.</a>
         </p>
       </div>
     </div>
@@ -92,18 +93,18 @@ export default {
 }
 .section-header {
   margin: 30px 0;
-  height: 95px;
   background: center / cover url("../assets/background-dodge.jpg") no-repeat;
   background-position: 70% 74%;
   position: sticky;
   border-radius: 0.35rem;
 
   .section-header-title {
-    padding: 20px 10px;
+    padding: 25px 10px;
 
     font-weight: bold;
     font-size: 2rem;
     text-shadow: 0px 0px 4px #0000009d;
+    color: white;
   }
 }
 </style>

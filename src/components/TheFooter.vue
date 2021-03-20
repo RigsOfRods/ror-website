@@ -67,7 +67,7 @@ export default {};
       flex: 1;
       padding-left: 5px;
       padding-right: 5px;
-      color: rgba(255,255,255,.87);
+      
       text-align: center;
     }
   }
@@ -75,9 +75,6 @@ export default {};
   .footer-lowerindex {
     font-size: 12px;
     color: $gray-500;
-    a,&:hover {
-      color: $gray-500;
-    }
   }
 
   .footer-indexcopyright {
@@ -90,12 +87,6 @@ export default {};
         font-size: 0.7em;
         font-weight: normal;
       }
-    }
-  }
-
-  a {
-    &:hover {
-      text-decoration: underline;
     }
   }
 }
