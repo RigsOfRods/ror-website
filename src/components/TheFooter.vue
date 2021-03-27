@@ -20,16 +20,16 @@
             </div>
             <div class="col">
               <div class="row footer-social">
-                <a class="col-12 col-md-2" href="twitter.com/rigsofrods"
+                <a class="col-12 col-md-2" href="https://twitter.com/rigsofrods"
                   ><i class="fab fa-twitter fa-2x"></i
                 ></a>
-                <a class="col-12 col-md-2" href="facebook.com/rigsofrods"
+                <a class="col-12 col-md-2" href="https://www.facebook.com/rigsofrods"
                   ><i class="fab fa-facebook fa-2x"></i
                 ></a>
-                <a class="col-12 col-md-2" href="discord.gg/rigsofrods"
+                <a class="col-12 col-md-2" href="https://discord.gg/rigsofrods"
                   ><i class="fab fa-discord fa-2x"></i
                 ></a>
-                <a class="col-12 col-md-2" href="youtube.com/rigsofrods"
+                <a class="col-12 col-md-2" href="https://www.youtube.com/rigsofrods"
                   ><i class="fab fa-youtube fa-2x"></i
                 ></a>
               </div>
