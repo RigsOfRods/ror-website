@@ -52,7 +52,7 @@
         <p class="card-text">
           Rigs of Rods is a large open-source project which means developers rely on users to report back issues they encounter directly to them. Reporting any issue, small or large, is an excellent contribution to the stability of the game.
           <ul>
-            <li>Our code repository is hosted on GitHub, which means <a href="https://github.com/RigsOfRods/rigs-of-rods/issues">we keep track of issues there</a>. Please review our <a href="#">guide on opening an issue</a>.</li>
+            <li>Our code repository is hosted on GitHub, which means <a href="https://github.com/RigsOfRods/rigs-of-rods/issues">we keep track of issues there</a>. Please review our <a href="https://github.com/RigsOfRods/rigs-of-rods/blob/a1b0d551f89d34975777f6da2457d8c9a299b253/CONTRIBUTING.md#reporting-bugs">guide on opening an issue</a>.</li>
             <li>Consider looking through other issues that haven't received as much attention.</li>
           </ul>
         </p>
@@ -65,7 +65,7 @@
         </a><br /><br />
         <h5 class="card-title">Documenting</h5>
         <p class="card-text">
-          Adding and improving documentation is critical for Rigs of Rods as many beginners and experts rely on it to have the most update-to-date information possible. Please see on <a href="https://docs.rigsofrods.org">how to contribute</a>.
+          Adding and improving documentation is critical for Rigs of Rods as many beginners and experts rely on it to have the most update-to-date information possible. Please see on <a href="https://github.com/RigsOfRods/docs.rigsofrods.org">how to contribute</a>.
         </p>
       </div>
     </div>

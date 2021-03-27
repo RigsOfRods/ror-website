@@ -38,10 +38,10 @@
         </div>
       </div>
       <div class="footer-lowerindex py-4">
-        <a href="#">Terms and rules</a> | 
-        <a href="#">Privacy policy</a> | 
-        <a href="#">Report abuse</a> | 
-        <a href="#">Branding guidelines</a> | 
+        <a href="https://forum.rigsofrods.org/help/terms/">Terms and rules</a> | 
+        <a href="https://forum.rigsofrods.org/help/privacy-policy/">Privacy policy</a> | 
+        <a href="https://helpdesk.rigsofrods.org/open.php?topicId=12">Report abuse</a> | 
+        <a href="https://docs.rigsofrods.org/tools-tutorials/branding/">Branding guidelines</a> | 
         <a href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=Rigs-of-Rods">Powered by <i class="fab fa-digital-ocean"></i> DigitalOcean</a>
       </div>
     </div>
