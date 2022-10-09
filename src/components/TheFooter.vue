@@ -3,10 +3,10 @@
     <div class="container">
       <div class="footer-index pt-4 mt-2">
         <div class="footer-indexcopyright">
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+          <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <div>
               <h4 class="mb-2">
-                © 2013-2021 Petr Ohlidal<br />
+                © 2013-2022 Petr Ohlidal<br />
                 <span>© 2005-2013 Pierre-Michel Ricordel, © 2009-2013 Thomas Fischer</span>
               </h4>
               Rigs of Rods is distributed under the
@@ -18,21 +18,24 @@
                 >CC BY-NC-SA 4.0 License</a
               >.
             </div>
-            <div class="col">
-              <div class="row footer-social">
-                <a class="col-12 col-md-2" href="https://twitter.com/rigsofrods"
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="col-12 col-md-2" href="https://twitter.com/rigsofrods"
                   ><i class="fab fa-twitter fa-2x"></i
-                ></a>
-                <a class="col-12 col-md-2" href="https://www.facebook.com/rigsofrods"
+                ></a></li>
+                <li class="ms-3"><a class="col-12 col-md-2" href="https://www.facebook.com/rigsofrods"
                   ><i class="fab fa-facebook fa-2x"></i
-                ></a>
-                <a class="col-12 col-md-2" href="https://discord.gg/rigsofrods"
+                ></a></li>
+                <li class="ms-3"><a class="col-12 col-md-2" href="https://discord.gg/rigsofrods"
                   ><i class="fab fa-discord fa-2x"></i
-                ></a>
-                <a class="col-12 col-md-2" href="https://www.youtube.com/rigsofrods"
+                ></a></li>
+                <li class="ms-3"><a class="col-12 col-md-2" href="https://www.youtube.com/rigsofrods"
                   ><i class="fab fa-youtube fa-2x"></i
-                ></a>
-              </div>
+                ></a></li>
+                <li class="ms-3"><a class="col-12 col-md-2" href="https://github.com/RigsOfRods"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -40,7 +43,7 @@
       <div class="footer-lowerindex py-4">
         <a href="https://forum.rigsofrods.org/help/terms/">Terms and rules</a> | 
         <a href="https://forum.rigsofrods.org/help/privacy-policy/">Privacy policy</a> | 
-        <a href="https://helpdesk.rigsofrods.org/open.php?topicId=12">Report abuse</a> | 
+        <a href="https://contact.rigsofrods.org">Report abuse</a> | 
         <a href="https://docs.rigsofrods.org/tools-tutorials/branding/">Branding guidelines</a> | 
         <a href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=Rigs-of-Rods">Powered by <i class="fab fa-digital-ocean"></i> DigitalOcean</a>
       </div>
@@ -57,20 +60,6 @@ export default {};
 
 .footer {
   background-color: $dark-400;
-
-  .footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    a {
-      flex: 1;
-      padding-left: 5px;
-      padding-right: 5px;
-      
-      text-align: center;
-    }
-  }
 
   .footer-lowerindex {
     font-size: 12px;
