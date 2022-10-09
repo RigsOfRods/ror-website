@@ -121,3 +121,22 @@ h1, h2, h3, h4, h5, h6 {
   // High Emphasis text, is 87%
   color: rgba($white, .87);
 }
+
+//
+// Dropdown
+//
+
+.dropdown-menu {
+  background-color: $dark-600;
+  border: 0;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+
+  .dropdown-item {
+    color: rgba(#FFF, .87);
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: $primary;
+  }
+}

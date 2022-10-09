@@ -24,12 +24,12 @@
         <div class="row py-2 mt-2 g-4">
           <div class="col-md-6">
             <div class="infocard">
-              See what's new in Rigs of Rods 2021.03 by reading the <a href="https://forum.rigsofrods.org/forums/announcements.44/">release notes</a>.
+              See what's new in the latest release of Rigs of Rods by reading the <a href="https://forum.rigsofrods.org/forums/announcements.44/">release notes</a>.
             </div>
           </div>
           <div class="col-md-6">
             <div class="infocard">
-              If you're new, its recommended you read our <a href="https://docs.rigsofrods.org/gameplay/beginners-guide/">guide on getting started</a>.
+              If you're new, it's recommended you read our <a href="https://docs.rigsofrods.org/gameplay/beginners-guide/">guide on getting started</a>.
             </div>
           </div>
           <div class="col">
@@ -41,6 +41,13 @@
         <div class="row py-4 g-4 mt-2">
           <div class="col-md-4">
             <h5 class="card-title">System requirements</h5>
+            <ul class="list-unstyled">
+              <li><strong>OS:</strong> Windows 7 64-bit or Greater</li>
+              <li><strong>Processor:</strong> Intel Core 2 Duo or AMD Athlon 64 X2</li>
+              <li><strong>Memory</strong>: 4 GB RAM</li>
+              <li><strong>Graphics</strong>: GeForce 8600GT or AMD Radeon 3650</li>
+              <li><strong>Storage</strong>: 5 GB available space</li>
+            </ul>
           </div>
           <div class="col-md-4">
             <h5 class="card-title">Previous releases</h5>
