@@ -1,17 +1,19 @@
-# rigsofrods.org
-
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-What runs [rigsofrods.org](http://rigsofrods.org) is ran by this source code. You are free to help and suggest changes.
+<img src="RoR_Website.png" width="35%" />
 
-### Setup & Running
-```bash
+## Rigs of Rods Website - rigsofrods.org
+
+**What runs [rigsofrods.org](http://rigsofrods.org) is ran by this source code.** You are free to help and suggest changes.
+
+## Setup & Running
+```sh
 git clone https://github.com/Zentro/ror-website.git .
-npm install
-npm run build
+pnpm install
+pnpm run build
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Compiles and hot-reloads for development
+```sh
+pnpm run dev
 ```
