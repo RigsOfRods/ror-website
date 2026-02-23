@@ -1,8 +1,8 @@
 // File: bootstrap_theme.scss
 
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 
 $enable-shadows: false; // Enables predefined `box-shadow` styles on various components. 'true' is default.
 $enable-caret: true; // Enables pseudo element caret on `.dropdown-toggle`.
@@ -12,7 +12,7 @@ $enable-gradients: false; // Enables gradient, `false` by default.
 // Variables follow Bootstrap's recommended `$component-state-property-size` formula
 // to stay consistent. See: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss#L3
 
-@import "./_vars.scss";
+@import "./vars";
 
 $container-max-widths: (
   sm: 540px,
@@ -52,19 +52,11 @@ $list-group-action-active-bg: $dark-200;
 $link-color: #226699; // Change the link `color` to the primary color.
 $link-hover-color: #2f84c5;
 
-$navbar-dark-disabled-color: rgba($white,0.38); // Change the defeault disabled `color` to white with 38% opacity.
-$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-disabled-color: rgba($white,0.38); // Change the default disabled `color` to white with 38% opacity.
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 
 $navbar-nav-link-font-weight: 100;
 $navbar-nav-link-font-size: 0.75em;
-
-$hero-color: $white; // Better for contrast to not have 87% opacity.
-$hero-spacer-y: $spacer;
-$hero-spacer-x: $spacer;
-$hero-body-padding: 3em 1.5em;
-$hero-body-padding-sm: 1.5em;
-$hero-body-padding-md: 9em 1.5em;
-$hero-body-padding-lg: 18em 1.5em;
 
 $footer-body-color: $gray-500;
 $footer-background-color: $dark-secondary;
@@ -79,13 +71,27 @@ $card-cap-bg: $dark-300;
 $btn-box-shadow: null;
 
 //this always needs to be last
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
+
+//
+// Global
+//
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 540px) {
+  html { font-size: 14px; }
+}
+@media (min-width: 720px) {
+  html { font-size: 16px; }
+}
 
 //
 // Navbar
 //
 
-//Depends on vue router
 .blueNavbar {
   background-color: $primary;
 }
@@ -105,6 +111,10 @@ $btn-box-shadow: null;
     color: $white;
     font-weight: 500;
   }
+}
+
+.navbar-toggler {
+  color: rgba(255,255,255,.55);
 }
 
 .btn-lg,
@@ -138,5 +148,26 @@ h1, h2, h3, h4, h5, h6 {
 
   .dropdown-item:hover, .dropdown-item:focus {
     background-color: $primary;
+  }
+}
+
+//
+// Section header (used on Download, Get Involved, Blog pages)
+//
+
+.section-header {
+  margin: 30px 0;
+  position: sticky;
+  border-radius: 0.35rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .section-header-title {
+    padding: 25px 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0px 0px 4px #0000009d;
+    color: white;
   }
 }
