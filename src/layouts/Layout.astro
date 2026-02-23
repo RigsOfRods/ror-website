@@ -1,0 +1,59 @@
+---
+import TheNavBar from '../components/TheNavBar.astro';
+import TheFooter from '../components/TheFooter.astro';
+import '../styles/bootstrap_theme.scss';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Rigs of Rods is a free and open source vehicle simulator that uses soft-body physics to simulate the motion destruction and deformation of vehicles.',
+} = Astro.props;
+
+const { pathname } = Astro.url;
+const base = import.meta.env.BASE_URL;
+const normalizedBase = base.endsWith('/') ? base : base + '/';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#226699" />
+    <meta name="description" content={description} />
+    <link rel="icon" href={`${normalizedBase}favicon.png`} />
+    <link rel="manifest" href={`${normalizedBase}manifest.json`} />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="rigsofrods.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://www.rigsofrods.org/" />
+    <meta property="og:image" content="https://cdn.rigsofrods.org/data/assets/og/RoR_2021_02.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rigsofrods" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://cdn.rigsofrods.org/data/assets/og/RoR_2021_02.png" />
+    <title>{title}</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+      <TheNavBar currentPath={pathname} />
+      <slot />
+      <TheFooter />
+      <script>
+        import 'bootstrap';
+      </script>
+  </body>
+</html>

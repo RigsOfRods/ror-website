@@ -1,10 +1,14 @@
-<template>
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 Not Found | Rigs of Rods">
   <div class="container not-found mx-auto my-auto">
     <div class="card">
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <h2>404! That page couldn't be found.</h2>
+            <h2>404! That page couldn&apos;t be found.</h2>
             <p>Try removing Ogre.h, that might solve your problem.</p>
           </div>
           <div class="col my-auto mx-auto">
@@ -14,23 +18,14 @@
       </div>
     </div>
   </div>
-</template>
-
-<script>
-export default {
-  name: "NotFound",
-  metaInfo: {
-    title: "404 Not Found",
-  },
-};
-</script>
+</Layout>
 
 <style lang="scss">
-@import "../stylesheets/_vars.scss";
+  @use '../styles/vars' as *;
 
-.not-found {
-  .card {
-    background-color: $secondary;
+  .not-found {
+    .card {
+      background-color: $secondary;
+    }
   }
-}
 </style>

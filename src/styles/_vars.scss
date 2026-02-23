@@ -1,5 +1,7 @@
 // File: _vars.scss
 
+$white: #fff;
+
 $primary: #226699;
 $secondary: #882500;
 $dark-secondary: #122a3d;
@@ -30,3 +32,12 @@ $dark-800: #333333;
 $dark-900: #353535;
 
 $font-family-base: "Maven Pro", sans-serif;
+
+// Hero section variables (used by index.astro)
+$hero-color: #fff;
+$hero-spacer-y: 1rem;
+$hero-spacer-x: 1rem;
+$hero-body-padding: 3em 1.5em;
+$hero-body-padding-sm: 1.5em;
+$hero-body-padding-md: 9em 1.5em;
+$hero-body-padding-lg: 18em 1.5em;
