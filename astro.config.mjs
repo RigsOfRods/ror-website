@@ -3,7 +3,6 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://www.rigsofrods.org',
-  base: '/ror-website',
   integrations: [mdx()],
   vite: {
     css: {
