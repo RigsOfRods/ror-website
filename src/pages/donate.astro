@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import bgCar from '../assets/background-car.png';
+---
+
+<Layout title="Donate | Rigs of Rods">
+  <div class="container donate">
+    <div
+      class="section-header"
+      style={`background-image: url(${bgCar.src}); background-position: center;`}
+    >
+      <div class="section-header-title">Donate</div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Support Rigs of Rods</h5>
+        <p class="card-text">
+          Rigs of Rods is a free, open-source project maintained by volunteers. Donations help cover the costs of hosting, forum software, and other project costs. Every contribution, no matter the size, helps keep the project running.
+        </p>
+        <p class="card-text">
+          All Rigs of Rods assets and donations are managed through <a href="https://www.spi-inc.org/" target="_blank" rel="noopener noreferrer">Software in the Public Interest, Inc. (SPI, Inc.)</a>, a 501(c)(3) non-profit organization. Because of SPI's nonprofit status, donations are <strong>tax-deductible in the United States</strong>.
+        </p>
+        <p class="card-text">
+          All funds are tracked transparently and reported by SPI's treasurer on the <a href="https://www.spi-inc.org/treasurer/" target="_blank" rel="noopener noreferrer">treasurer's website</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card donate-option">
+          <div class="card-body">
+            <h5 class="card-title">PayPal</h5>
+            <p class="card-text">
+              Donate directly through PayPal. One-time or recurring donations are accepted.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.paypal.com/donate?hosted_button_id=LXNE8K69DVDQW"
+              target="_blank"
+              rel="noopener noreferrer"
+            ><i class="fab fa-paypal" style="padding-right: 0.5em;"></i>Donate with PayPal</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card donate-option">
+          <div class="card-body">
+            <h5 class="card-title">
+              Liberapay <span class="badge bg-secondary">Coming Soon</span>
+            </h5>
+            <p class="card-text">
+              Liberapay support is on the way. Soon you'll be able to set up recurring donations through Liberapay, a non-profit, open-source funding platform.
+            </p>
+            <button class="btn btn-secondary" disabled>Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .donate {
+    h4 {
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: #262626;
+      margin-bottom: 20px;
+    }
+
+    .donate-option {
+      height: 100%;
+
+      .badge {
+        font-size: 0.6em;
+        vertical-align: middle;
+        margin-left: 0.5em;
+      }
+    }
+  }
+</style>
