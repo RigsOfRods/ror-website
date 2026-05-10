@@ -52,7 +52,8 @@ function isActive(segment: string) {
           <a
             class:list={["nav-link", { selected: isHome }]}
             href={normalizedBase}
-          >Home</a>
+            aria-label="Home"
+          ><i class="fas fa-home"></i></a>
         </li>
         <li class="nav-item">
           <a
@@ -88,6 +89,12 @@ function isActive(segment: string) {
             class:list={["nav-link", { selected: isActive('get-involved') }]}
             href={`${normalizedBase}get-involved`}
           >Get Involved</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class:list={["nav-link", { selected: isActive('donate') }]}
+            href={`${normalizedBase}donate`}
+          ><i class="fas fa-heart" style="padding-right: 0.4em;"></i>Donate</a>
         </li>
       </ul>
     </div>
